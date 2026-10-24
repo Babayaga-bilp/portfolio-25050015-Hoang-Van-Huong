@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio — Hoàng Văn Hướng 25050015">
+  <meta name="theme-color" content="#A8B5A0">
+  <title>Portfolio | 25050015 Hoàng Văn Hướng </title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Portfolio — về đầu trang"><span class="brand-icon"
+          aria-hidden="true">p</span>portfolio<span class="brand-dot">.</span></a>
+      <nav id="main-menu" class="nav" aria-label="Điều hướng chính">
+        <a href="#about">Thông tin</a><a href="#goals">Mục tiêu</a><a href="#skills">Kỹ năng</a><a href="#projects">Dự
+          án</a><a class="nav-contact" href="#contact">Liên hệ <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-12 theme-toggle" id="theme-toggle" type="button" aria-label="Bật giao diện tối"
+          aria-pressed="false">
+          <span id="theme-icon">☾ Dark</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-menu" aria-expanded="false"
+          aria-label="Mở menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            CHÀO MỪNG ĐẾN GÓC NHỎ CỦA MÌNH
+          </p>
+
+          <p class="hero-greeting">Xin chào, mình là</p>
+
+          <h1 id="hero-title" aria-label="Hoàng Văn Hướng.">
+            <em class="typing-name">
+              <!-- Giữ sẵn khoảng trống để bố cục không bị nhảy -->
+              <span class="typing-reserve" aria-hidden="true">
+                Hoàng Văn Hướng.
+              </span>
+
+              <span id="typing-text" aria-hidden="true">
+                Hoàng Văn Hướng.
+              </span>
+            </em>
+          </h1>
+
+          <p class="hero-role">
+            Sinh viên năm 2 ngành Công nghệ thông tin
+          </p>
+
+          <p class="hero-description">
+            Mình đang học cách biến những ý tưởng nhỏ thành trải nghiệm
+            trên web. Đây là nơi mình lưu lại những điều đã học
+            và hành trình trưởng thành của bản thân.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Xem dự án <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button button-outline" href="#contact">
+              Liên hệ với mình <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-footnote">
+            <span class="small-line"></span>
+            Học hỏi mỗi ngày. Sáng tạo từng chút.
+          </div>
+        </div>
+
+        <!-- Khung ảnh luân phiên -->
+        <div class="hero-portrait">
+          <div class="portrait-caption">
+            <span class="status-dot"></span>
+            Một chút về mình
+          </div>
+
+          <div class="portrait-slider">
+            <img src="images/AVT.jpg" alt="Ảnh Hoàng Văn Hướng">
+
+            <img src="images/AVT2.jpg" alt="Hình ảnh học tập của Hướng">
+
+            <img src="images/AVT3.jpg" alt="Hình ảnh hoạt động của Hướng">
+          </div>
+
+          <div class="portrait-note">
+            <span aria-hidden="true">✳</span>
+            learning & growing
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-bottom">
+        <a href="#about">
+          <span aria-hidden="true">↓</span>
+          Cuộn để tìm hiểu thêm
+        </a>
+
+        <span>HTML · CSS · JAVASCRIPT</span>
+      </div>
+    </section>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="profile-column">
+          <!-- Ảnh đại diện -->
+          <div class="profile-frame">
+            <!-- Khi có ảnh thật, thay div avatar-placeholder bằng:
+    <img src="images/avatar.jpg" alt="Ảnh Hoàng Văn Hướng">
+    -->
+            <img src="images/hello.png" alt="Ảnh chân dung Hoàng Văn Hướng">
+
+            <span class="profile-sticker">hello, that's me! ↗</span>
+            <span class="profile-caption">MỘT CHÚT VỀ MÌNH</span>
+          </div>
+
+          <!-- Thay các đường dẫn href bằng link trang cá nhân của bạn -->
+          <div class="social-links" aria-label="Mạng xã hội của Hướng">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/hoang.huong.604795" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook của Hướng (mở tab mới)" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.4C17.5 1.2 16.3 1 15 1c-3 0-5 1.8-5 5v3H7v4h3v8h4Z">
+                </path>
+              </svg>
+            </a>
+            <!-- Discord -->
+            <a href="https://discord.com/users/948870848553578557" target="_blank" rel="noopener noreferrer"
+              aria-label="Discord của Hướng (mở tab mới)" title="Discord">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.3 4.4a19.8 19.8 0 0 0-4.9-1.5l-.6 1.2a18.3 18.3 0 0 0-5.6 0l-.6-1.2a19.8 19.8 0 0 0-4.9 1.5C.6 9 .1 13.5.4 17.9a20 20 0 0 0 6 3l1.2-2a12.5 12.5 0 0 1-1.9-.9l.5-.4a14.3 14.3 0 0 0 11.6 0l.5.4a12.5 12.5 0 0 1-1.9.9l1.2 2a20 20 0 0 0 6-3c.4-5.1-.8-9.5-3.3-13.5ZM8.5 15.2c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm7 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Z">
+                </path>
+              </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Babayaga-bilp" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub của Hướng (mở tab mới)" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.08c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.61 0c2.14-1.45 3.08-1.15 3.08-1.15.62 1.55.23 2.7.12 2.98.72.79 1.15 1.8 1.15 3.03 0 4.33-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z">
+                </path>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/nephrem8424/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram của Hướng (mở tab mới)" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@burn6661" target="_blank" rel="noopener noreferrer"
+              aria-label="TikTok của Hướng (mở tab mới)" title="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M16.6 1H13v14.4a3.2 3.2 0 1 1-2.7-3.16V8.6a6.8 6.8 0 1 0 6.3 6.8V8.1a9.3 9.3 0 0 0 5.4 1.7V6.2A5.5 5.5 0 0 1 16.6 1Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">NGƯỜI ĐỨNG SAU NHỮNG DÒNG CODE</p>
+          <h2 id="about-title">Xin chào,<br>mình là Hướng.</em></h2>
+          <p>Mình là sinh viên ngành <strong>Công nghệ thông tin</strong> tại <span class="editable">Trường đại học Bình
+              Dương</span>.</p>
+          <p class="editable">Hướng là 1 người hướng ngoại, vui vẻ và hòa đồng với mọi người, và thích tìm hiểu nguyên
+            lý hoạt động của các chương trình và máy móc, là 1 người rất hay tò mò, bên dưới lên mạng xã hội của Hướng
+            nếu muốn chúng mình có thể thành ban:>> </p>
+          <div class="about-facts">
+            <div><span>NGÀNH HỌC</span><strong>Công nghệ thông tin</strong></div>
+            <div><span>ĐỊNH HƯỚNG</span><strong class="editable">kĩ sư IT</strong></div>
+          </div>
+          <a class="text-link" href="#contact">Kết nối với mình <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="section goals-section" id="goals" aria-labelledby="goals-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 — ĐỊNH HƯỚNG</p>
+            <h2 id="goals-title">Từng bước, đi xa hơn.</em></h2>
+          </div>
+          <p>Mục tiêu nghề nghiệp của mình.</p>
+        </div>
+        <!-- Nội dung gợi ý: chỉnh lại theo mục tiêu thật của bạn. -->
+        <div class="goals-grid">
+          <article class="goal"><span class="goal-number">01</span>
+            <h3>Xây nền tảng vững chắc</h3>
+            <p>Nắm vững HTML, CSS và JavaScript; vận dụng kiến thức để tự xây dựng những website nhỏ, rõ ràng và dễ sử
+              dụng.</p><span class="tag">MỤC TIÊU NGẮN HẠN</span>
+          </article>
+          <article class="goal"><span class="goal-number">02</span>
+            <h3>Học qua sản phẩm thực tế</h3>
+            <p>Hoàn thiện các dự án cá nhân, rèn tư duy giải quyết vấn đề và học cách cộng tác trong những dự án nhóm.
+            </p><span class="tag">TRÊN HÀNH TRÌNH</span>
+          </article>
+          <article class="goal"><span class="goal-number">03</span>
+            <h3>Tìm hướng đi của riêng mình</h3>
+            <p class="editable">[Điền mục tiêu dài hạn: vị trí mong muốn, lĩnh vực yêu thích và giá trị bạn muốn tạo
+              ra.]</p><span class="tag">MỤC TIÊU DÀI HẠN</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container skills-grid">
+        <div>
+          <p class="eyebrow">02 — KỸ NĂNG</p>
+          <h2 id="skills-title">Những kỹ năng <br>mình đang học.</em></h2>
+          <p class="section-intro">Mỗi kỹ năng là một mảnh ghép.<br>Mỗi bài tập là một cơ hội để tiến bộ.</p>
+        </div>
+        <!-- Kỹ năng gợi ý theo môn học: sửa mô tả cho đúng với bạn. -->
+        <!-- Các phần trăm dưới đây là ví dụ, bạn tự điều chỉnh -->
+        <div class="skill-list">
+          <!-- HTML -->
+          <article class="skill-row">
+            <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+
+            <div class="skill-info">
+              <div class="skill-heading">
+                <h3>HTML</h3>
+                <span class="skill-percent" aria-hidden="true">0%</span>
+              </div>
+
+              <p>Cấu trúc nội dung, thẻ ngữ nghĩa, biểu mẫu.</p>
+
+              <div class="skill-track" role="progressbar" aria-label="Mức tự đánh giá HTML" aria-valuemin="0"
+                aria-valuemax="100" aria-valuenow="70" data-percent="70">
+                <div class="skill-fill"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CSS -->
+          <article class="skill-row">
+            <span class="skill-icon" aria-hidden="true">#</span>
+
+            <div class="skill-info">
+              <div class="skill-heading">
+                <h3>CSS</h3>
+                <span class="skill-percent" aria-hidden="true">0%</span>
+              </div>
+
+              <p>Bố cục, màu sắc, Flexbox, Grid, responsive.</p>
+
+              <div class="skill-track" role="progressbar" aria-label="Mức tự đánh giá CSS" aria-valuemin="0"
+                aria-valuemax="100" aria-valuenow="70" data-percent="70">
+                <div class="skill-fill"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ENGLISH -->
+          <article class="skill-row">
+            <span class="skill-icon" aria-hidden="true">EN</span>
+
+            <div class="skill-info">
+              <div class="skill-heading">
+                <h3>English</h3>
+                <span class="skill-percent" aria-hidden="true">0%</span>
+              </div>
+
+              <p>Rèn luyện nghe, nói, đọc, viết và tiếng Anh chuyên ngành.</p>
+
+              <div class="skill-track" role="progressbar" aria-label="Mức tự đánh giá tiếng Anh" aria-valuemin="0"
+                aria-valuemax="100" aria-valuenow="85" data-percent="80">
+                <div class="skill-fill"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PYTHON -->
+          <article class="skill-row">
+            <span class="skill-icon" aria-hidden="true">Py</span>
+
+            <div class="skill-info">
+              <div class="skill-heading">
+                <h3>Python</h3>
+                <span class="skill-percent" aria-hidden="true">0%</span>
+              </div>
+
+              <p>Cú pháp cơ bản, xử lý dữ liệu và tư duy lập trình.</p>
+
+              <div class="skill-track" role="progressbar" aria-label="Mức tự đánh giá Python" aria-valuemin="0"
+                aria-valuemax="100" aria-valuenow="75" data-percent="75">
+                <div class="skill-fill"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section career-section" id="career" aria-labelledby="career-title">
+      <div class="container career-grid">
+        <div class="career-text">
+          <p class="eyebrow">03 — HỌC TẬP & KINH NGHIỆM</p>
+          <h2 id="career-title">Thông tin nghề nghiệp.</em></h2>
+          <p>Mình là sinh viên năm 2 ngành <strong>Công nghệ thông tin</strong> tại <strong>Trường Đại học Bình
+              Dương</strong>, định hướng trở thành kỹ sư IT.</p>
+          <p class="editable">Mình là sinh viên khóa k28 của BDU, đồng thời để học hỏi thêm kĩ năng, nâng cao trình độ
+            mình đã ứng tuyển và hiện tại là cộng tác viên của trung tâm STEAM AI viện AIDTI</p>
+        </div>
+        <div class="career-images" aria-label="Hình ảnh học tập và hoạt động">
+          <figure>
+            <img class="career-photo" src="images/nghe1.jpg" alt="Hình ảnh học tập và hoạt động 1" loading="lazy">
+            <figcaption>Đi tuyển sinh nè </figcaption>
+          </figure>
+
+          <figure>
+            <img class="career-photo" src="images/nghe2.jpg" alt="Hình ảnh học tập và hoạt động 2" loading="lazy">
+            <figcaption>Đau đầu nhức óc vì bị sếp dí nè </figcaption>
+          </figure>
+
+          <figure>
+            <img class="career-photo" src="images/nghe3.jpg" alt="Hình ảnh học tập và hoạt động 3" loading="lazy">
+            <figcaption>Đi nghỉ dưỡng cùng trung tâm nè </figcaption>
+          </figure>
+
+          <figure>
+            <img class="career-photo" src="images/nghe4.jpg" alt="Hình ảnh học tập và hoạt động 4" loading="lazy">
+            <figcaption>No caption ;-; </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== DỰ ÁN ==================== -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 — Dự án</p>
+            <h2 id="projects-title">Từ ý tưởng đến sản phẩm.</h2>
+          </div>
+
+        </div>
+
+        <div class="projects-grid">
+          <!-- DỰ ÁN 1 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/project1.jpg" alt="Robot trợ lý giọng nói AI sử dụng ESP32" loading="lazy">
+            </div>
+
+            <div class="project-content">
+              <p class="project-category">
+                ESP32 · Python · Flask · Grok API · Whisper · gTTS
+              </p>
+
+              <h3>AI Voice Assistant Robot</h3>
+
+              <p>
+                Phát triển robot trợ lý giọng nói sử dụng ESP32 và
+                Python, tích hợp nhận dạng giọng nói qua Whisper
+                và phản hồi âm thanh qua loa.
+                Vai trò: Embedded System & AI Developer.
+              </p>
+
+              <details>
+                <summary>
+                  Ghi chú dự án <span aria-hidden="true">+</span>
+                </summary>
+
+                <div>
+                  <p><strong>Ý tưởng:</strong> Trợ lý AI.</p>
+                  <p>
+                    <strong>Khó khăn:</strong>
+                    Thiếu nhiều kiến thức về IoT.
+                  </p>
+                  <p>
+                    <strong>Điều học được:</strong>
+                    Các kiến thức về IoT.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- DỰ ÁN 2 -->
+          <article class="project-card">
+            <div class="project-image project-image-alt">
+              <img src="images/PROJECT2.png" alt="Giao diện game Đêm Trung Thu — Cung Trăng Của Chú Cuội"
+                loading="lazy">
+            </div>
+
+            <div class="project-content">
+              <p class="project-category">
+                Python 3 · Pygame · Math &amp; Physics Logic ·
+                Object-Oriented Programming (OOP) · JSON File I/O
+              </p>
+
+              <h3>Game 2D Đêm Trung Thu - Cung Trăng Của Chú Cuội</h3>
+
+              <p>
+                Tựa game 2D tái hiện lối chơi Đào Vàng (Gold Miner)
+                kinh điển nhưng biến tấu theo chủ đề Tết Trung Thu
+                dân gian Việt Nam. Người chơi nhập vai Chú Cuội
+                trên đảo bay, thả móc và móc vật phẩm trước khi hết giờ.
+              </p>
+
+              <details>
+                <summary>
+                  Ghi chú dự án <span aria-hidden="true">+</span>
+                </summary>
+
+                <div>
+                  <p>
+                    <strong>Ý tưởng:</strong>
+                    Làm một tựa game thân thuộc nhằm mục đích giáo dục.
+                  </p>
+                  <p>
+                    <strong>Khó khăn:</strong>
+                    Tính toán tọa độ và quỹ đạo.
+                  </p>
+                  <p>
+                    <strong>Điều học được:</strong>
+                    Kiến thức về kiến trúc lập trình hướng đối tượng.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== SỞ THÍCH ==================== -->
+    <section class="section hobbies-section" id="hobbies" aria-labelledby="hobbies-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">05 — NGOÀI NHỮNG DÒNG CODE</p>
+            <h2 id="hobbies-title">Những điều mình yêu thích.</em></h2>
+          </div>
+          <p>Một vài mảnh ghép làm nên mình.</p>
+        </div>
+
+        <div class="hobby-grid">
+          <!-- NGHE NHẠC -->
+          <article class="hobby-card">
+            <h3>Nghe nhạc</h3>
+
+            <p class="hobby-description">
+              Mình nghe rất nhiều nhạc nhạc ta cho đến nhạc ngoại và cũng nghe rất nhiều thể loại từ rock cho đến lofi
+              ở dưới là 1 vài bài tiêu biểu không biết chúng mình có chung gu nhạc không nhỉ;-;?
+            </p>
+
+            <img class="hobby-cover" src="images/musicdance.gif" alt="Minh họa sở thích nghe nhạc" loading="lazy">
+
+            <button class="hobby-toggle" type="button" aria-expanded="false" aria-controls="music-extra">
+              Chi tiết
+            </button>
+
+            <div class="hobby-extra" id="music-extra" hidden>
+              <p><strong>Những bài hát mình yêu thích:</strong></p>
+
+              <!-- Thay LINK_BAI_HAT bằng đường dẫn bài hát thật -->
+              <ul class="hobby-list music-list">
+                <li>
+                  <a href="https://youtu.be/ugxi0U3MwNs?si=UwTHfIaMmII0R9_l" target="_blank" rel="noopener noreferrer">
+                    ♫ Star Crossing Night
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://youtu.be/dQw4w9WgXcQ?si=H7DxFjMWnwKlaex9" target="_blank" rel="noopener noreferrer">
+                    ♫ Never Gonna Give You Up
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://youtu.be/Z_7mF5uWqIs?si=xzshc_XaHwjtS-lq" target="_blank" rel="noopener noreferrer">
+                    ♫ No hay nada que podamos hacer
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- XEM PHIM -->
+          <article class="hobby-card">
+            <h3>Xem phim</h3>
+
+            <p class="hobby-description">
+              Mình chủ yếu xem phim 2D(anime) là chính nhưng bên cạnh đó cũng có 1 số bộ phim khác hãy chia sẻ với
+              mình nếu bạn cũng giống mình nhé!
+            </p>
+
+            <img class="hobby-cover" src="images/readbook.gif" alt="Minh họa sở thích xem phim" loading="lazy">
+
+            <button class="hobby-toggle" type="button" aria-expanded="false" aria-controls="movies-extra">
+              Chi tiết
+            </button>
+
+            <div class="hobby-extra" id="movies-extra" hidden>
+              <p><strong>Những bộ phim mình yêu thích:</strong></p>
+
+              <ul class="hobby-list">
+                <li>
+                  <h4>tensei slime datta ken</h4>
+                  <img class="hobby-detail-image" src="images/Slime.jpg" alt="Poster phim thứ nhất" loading="lazy">
+                </li>
+
+                <li>
+                  <h4>Hannibal</h4>
+                  <img class="hobby-detail-image" src="images/Hannibal.jpg" alt="Poster phim thứ hai" loading="lazy">
+
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- CHƠI GAME -->
+          <article class="hobby-card">
+            <h3>Chơi game</h3>
+
+            <p class="hobby-description">
+              Là dân IT nên dĩ nhiên mình chơi game khá nhiều, và chơi rất nhiều thể loại như MMO-RPG, turn game,
+              FPS... và ở dưới là 2 tựa game mình thường xuyên chơi nếu bạn thiếu 1 cộng sự có thể kết bạn với tớ nhé
+              O-O
+            </p>
+
+            <img class="hobby-cover" src="images/playinggame.gif" alt="Minh họa sở thích chơi game" loading="lazy">
+
+            <button class="hobby-toggle" type="button" aria-expanded="false" aria-controls="games-extra">
+              Chi tiết
+            </button>
+
+            <div class="hobby-extra" id="games-extra" hidden>
+              <p><strong>Những tựa game mình thích:</strong></p>
+
+              <ul class="hobby-list">
+                <li>
+                  <h4>Genshin Impact</h4>
+                  <img class="hobby-detail-image" src="images/GI.jpg" alt="Hình ảnh game thứ nhất" loading="lazy">
+                  <p> Tựa game đưa mình tới với thế giới 2D á;-;</p>
+                </li>
+
+                <li>
+                  <h4>Valorant</h4>
+                  <img class="hobby-detail-image" src="images/valorant.jpg" alt="Hình ảnh game thứ hai" loading="lazy">
+                  <p>Đây là nơi mà mình có những giây phút giải trí cũng với những người bạn sau 1 ngày năng suất OxO
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section certificates-section" id="certificates" aria-labelledby="certificates-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">06 — DẤU ẤN CÁ NHÂN</p>
+            <h2 id="certificates-title">Thành tích mình đạt được!</em></h2>
+          </div>
+          <p>Những cột mốc trên hành trình học tập.</p>
+        </div>
+        <div class="certificate-list">
+          <article class="certificate-row"><span class="certificate-icon" aria-hidden="true">◇</span>
+            <div>
+              <h3>GOOGLE Cybersecurity</h3>
+              <p class="editable"> Cousera-2024</p>
+            </div><span class="certificate-type">CHỨNG CHỈ</span>
+          </article>
+          <article class="certificate-row"><span class="certificate-icon" aria-hidden="true">✳</span>
+            <div>
+              <h3>Công tác đoàn thanh niên</h3>
+              <p class="editable">Xuất sắc trong công tác đoàn và phong trào thanh niên</p>
+            </div><span class="certificate-type">GIẢI THƯỞNG</span>
+          </article>
+          <!-- NGHIÊN CỨU KHOA HỌC CẤP TRƯỜNG -->
+          <article class="certificate-row">
+            <span class="certificate-icon" aria-hidden="true">⌘</span>
+
+            <div>
+              <h3>Nghiên cứu khoa học cấp trường</h3>
+              <p>
+                Tham gia đề tài xây dựng ứng dụng quản lý thư viện.
+              </p>
+            </div>
+
+            <span class="certificate-type">NGHIÊN CỨU</span>
+          </article>
+
+          <!-- NGHIÊN CỨU ĐANG THAM GIA -->
+          <article class="certificate-row">
+            <span class="certificate-icon" aria-hidden="true">✧</span>
+
+            <div>
+              <h3>Nghiên cứu về khử nhiễu và phân đoạn ảnh</h3>
+              <p>
+                Hiện đang tham gia nghiên cứu khoa học về
+                khử nhiễu (denoising) và phân đoạn ảnh (segmentation).
+              </p>
+            </div>
+
+            <span class="certificate-type">ĐANG THAM GIA</span>
+          </article>
+          <!-- CÔNG TÁC ĐOÀN -->
+          <article class="certificate-row">
+            <span class="certificate-icon" aria-hidden="true">✳</span>
+
+            <div>
+              <h3>Phó Bí thư Chi đoàn 28TH01</h3>
+              <p>
+                Hiện đảm nhiệm vai trò Phó Bí thư Chi đoàn 28TH01.
+              </p>
+            </div>
+
+            <span class="certificate-type">CÔNG TÁC ĐOÀN</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">07 — KẾT NỐI</p>
+
+          <h2 id="contact-title">
+            Mọi ý tưởng hay<br>
+            đều bắt đầu bằng<br>
+            một lời xin chào.
+          </h2>
+
+          <p class="section-intro">
+            Cảm ơn bạn đã ghé qua góc nhỏ của mình.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <!-- Bấm để mở ứng dụng gửi email -->
+          <a class="contact-item" href="mailto:hoanghuong25oooo@gmail.com">
+            <div>
+              <span>EMAIL</span>
+              <strong>hoanghuong25oooo@gmail.com</strong>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <!-- Bấm để mở Facebook ở tab mới -->
+          <a class="contact-item" href="https://www.facebook.com/hoang.huong.604795" target="_blank"
+            rel="noopener noreferrer">
+            <div>
+              <span>FACEBOOK</span>
+              <strong>Hoàng Văn Hướng</strong>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="#home">portfolio<span class="brand-dot">.</span></a>
+      <p>Được viết bằng sự tò mò & một chút xanh sage.</p><a class="text-link" href="#home">Về đầu trang <span
+          aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+
+</html>
